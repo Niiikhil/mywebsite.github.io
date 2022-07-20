@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+    <title>PROJECT 1</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="portstyle.css">
+
+<style>
+    body {
+
+        font-family: 'Baloo Bhai', cursive;
+        color: rgb(0, 0, 0);
+        margin: 0px;
+        padding: 0px;
+        background: url('blackand.jpeg')no-repeat ;
+
+
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .header .left a{
+        /* border: 5px solid blue; */
+        display: inline-block;
+        position: absolute;
+        /* top: 10px; */
+        left: 10px;
+        font-size: 40px;
+        /* margin-top: 15px; */
+        text-decoration: none;
+        
+    }
+
+    .mid {
+        /* border: 5px solid rgb(195, 255, 0); */
+        display: block;
+        width: 40%;
+        margin: 12px auto;
+
+    }
+
+    .right {
+        /* border: 5px solid rgb(255, 85, 0); */
+        display: inline-block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .navbar {
+        display: inline-block;
+
+    }
+
+    .navbar li {
+        display: inline-block;
+    }
+
+    .navbar li a {
+        padding: 10px 10px;
+        text-decoration: none;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(255, 0, 0);
+
+    }
+
+    /* .left img {
+        width: 65px;
+        position: top;
+        position: left;
+    } */
+
+    .btn {
+        font-family: 'Baloo Bhai', cursive;
+
+        margin: 0px 10px;
+        padding: 10px 10px;
+        background-color: black;
+        color: white;
+        border: 2px solid rgb(0, 208, 255);
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 15px;
+    }
+
+    .btn:hover {
+        /* text-decoration: underline; */
+        background-color: rgb(251, 4, 4);
+
+    }
+
+    .container {
+        border: 3px solid;
+        margin-top: 135px;
+        margin-right: 100px;
+        margin-left: 600px;
+        margin-bottom: 100px;
+
+        padding: 2px 2px;
+    }
+
+    .container h1 {
+        text-align: center;
+        font-size: 50px;
+    }
+
+    
+
+    .container p {
+        color: rgb(0, 0, 0);
+        line-height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .container a {
+        background-color: rgb(0, 0, 0);
+        border: 3px solid black;
+        text-decoration: none;
+        color: white;
+        padding: 10px 20px;
+        margin-left: 200px;
+        /* margin-bottom: 100px; */
+        display: inline-block;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+    }
+
+    .container a:hover {
+        background-color: rgb(235, 255, 12);
+        color: black;
+        font-size: 20px;
+        padding: 5px 5px;
+    }
+
+
+
+    span {
+        color: rgb(255, 0, 0);
+    }
+
+
+
+
+    .about {
+        width: 100%;
+        padding: 100px 0px;
+        background-color: black;
+        display: flex;
+
+
+    }
+
+    .about img {
+        height: auto;
+        width: 400px;
+        border-radius: 20px 5px 20px 5px;
+
+
+    }
+
+    .about-text {
+        /* background-color: white; */
+        width: 500px;
+    }
+
+    .main {
+        max-width: 95%;
+        width: 1130px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    .about-text h2 {
+        color: white;
+        font-size: 74px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        padding-bottom: 0px;
+    }
+
+
+    .about-text h4 {
+        color: white;
+        letter-spacing: 2px;
+        font-size: 22px;
+        margin-top: 0px;
+        margin-bottom: 24px;
+    }
+
+    .about-text p {
+        color: #fcfc;
+        letter-spacing: 1px;
+        line-height: 27px;
+        font-size: 18px;
+        margin-bottom: 20px;
+
+
+    }
+
+    .bbtn {
+        font-family: 'Baloo Bhai', cursive;
+
+        margin: 0px 10px;
+        padding: 13px 20px;
+        background-color: rgb(255, 0, 0);
+        color: rgb(0, 0, 0);
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 22px;
+        border-radius: 24px;
+        transition: 0.1s;
+    }
+
+    .bbtn:hover {
+        /* text-decoration: underline; */
+        background-color: rgb(0, 0, 0);
+        color: white;
+
+    }
+
+
+    /* SERVICES */
+    .services {
+        background-color: #fcfc;
+        width: 100%;
+        padding: 100px 0px;
+
+    }
+
+    .title h2 {
+        color: rgb(0, 0, 0);
+        font-size: 60px;
+        width: 1130px;
+        margin: 30px auto;
+        text-align: center;
+    }
+
+    .box {
+
+        min-height: 200px;
+        width: 200px;
+        border: 4px solid black;
+        display: inline-block;
+        align-items: center;
+        justify-content: space-around;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 12%;
+    }
+
+    .box h4 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(255, 36, 3);
+        letter-spacing: 1px;
+        font-size: 20px;
+
+    }
+
+    .box .card {
+        font-size: 35px;
+        color: rgb(0, 0, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10px;
+
+
+    }
+
+    .contact .maxwidth .title {
+        font-size: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .contact .maxwidth {
+        width: 100%;
+        display: inline-block;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .contact .maxwidth .leftcolumn {
+        width: calc(50% - 30px);
+        padding-left: 40px;
+    }
+
+    .contact .maxwidth .leftcolumn p {
+        text-align: justify;
+    }
+
+    .contact .maxwidth .leftcolumn .text {
+        font-size: 30px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+    }
+
+    .contact .maxwidth .leftcolumn .icons {
+        margin: 10px 0px;
+    }
+
+    .contact .maxwidth .leftcolumn .rows {
+        display: flex;
+        height: 65px;
+        align-items: center;
+
+
+    }
+
+    .contact .maxwidth .leftcolumn .info {
+        padding-left: 20px;
+    }
+
+    .contact .maxwidth .leftcolumn .rows i {
+        font-size: 25px;
+        color: crimson;
+    }
+
+    .contact .maxwidth .leftcolumn .info .head {
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+
+    .contact .maxwidth .leftcolumn .info .subtitle {
+        color: #333;
+    }
+
+
+    .contact .rightcolumn .text {
+        margin-bottom: 20px;
+        font-size: 30px;
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact .rightcolumn {
+        margin-top: -340px;
+        margin-left: 500px;
+        display: flex;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact .rightcolumn .button {
+        margin-left: 30px;
+        height: 47px;
+        width: 100%;
+    }
+
+    .contact .rightcolumn .button button {
+        font-family: 'Baloo Bhai', cursive;
+        width: 65%;
+        height: 65%;
+        font-size: 15px;
+        border: 2px solid cornsilk;
+        background-color: crimson;
+        border-radius: 15px;
+        color: white;
+
+    }
+    .contact .rightcolumn .button button:hover{
+        cursor: pointer;
+    }
+
+    .topright{
+        display: block;
+        font-size: 50px;
+        margin-left: 1200px;
+        margin-top: -230px;
+    }
+
+    footer {
+        background-color: black;
+        text-decoration: none;
+        text-align: center;
+        padding: 15px 17px;
+    }
+
+    footer span {
+        color: crimson;
+        text-decoration: none;
+    }
+    footer span a{
+        text-decoration: none;
+        color: crimson;
+    }
+
+    footer p {
+
+        color: white;
+    }
+
+    .callme{
+        text-decoration: none;
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        font-weight: 1000;
+        background-color: rgb(0, 0, 0);
+        padding: 5px 5px;
+        border-radius: 5px 5px;
+
+    }
+    .callme:hover{
+        background-color: yellow;
+        color: black;
+        border: 2px solid black;
+        transition: all 0.3s ease-in-out;
+
+    }
+    .main .about-text .callme{
+        background-color: crimson;
+    }
+    .main .about-text .callme:hover{
+        background-color: rgb(17, 0, 255);
+        color: white;
+        transition: all 0.2s ease;
+    }
+
+
+
+
+</style>
+
+
+<body>
+
+    <header class="header" id="HOME" >
+        <div class="left">
+            <!-- <a href="#">Portfo<span>Lio</span></a> -->
+
+            <a href="#HOME">PortFo<span>Lio..</span></a>
+        </div>
+
+        <div class="mid">
+            <div class="navbar">
+                <ul>
+                    <li><a href="#HOME" class="active">Home</a></li>
+                    <li><a href="#ABOUTME">ABOUT ME</a></li>
+                    <li><a href="#SERVICES">MY SKILLS</a></li>
+                    <li><a href="#contact">CONTACT ME</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right">
+            <a class="callme" href="tel:+91 9971615870"  >CALL ME</a>
+            <!-- <button class="btn">
+                HIRE ME
+            </button> -->
+        </div>
+    </header>
+
+    
+    
+
+
+    <div class="container">
+        
+        <h1>Hi I'm <span>NIKHIL </span> </h1>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is My Official Portfolio Website to Show All
+            <br> My Educational QUALIFICATIONS and WORK EXPERIENCES
+            <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;_____________________________________
+        </p>
+        <a href="Nikhil's resume.pdf">DOWNLOAD CV</a>
+    </div>
+
+
+    <!-- ABOUT SECTION STARTS HERE -->
+    <section class="about" id="ABOUTME">
+        <div class="main">
+            <div class="about-text">
+                <h2>About ME</h2>
+                <h4>Developer <span>& Designer</span></h4>
+                <p>
+                    I am a hard working and motivated individual who enjoys solving real world problems. I have the ability to learn new concepts quickly, communicate ideas clearly and effectively and work well as part of a team or on my own initiative to deliver a product to meet expectations and deadlines. My current aim is to secure a place on a graduate scheme in a forward thinking company with opportunity for career progression, so that I can continue to develop my knowledge, skills and experience by tackling challenges and delivering successful outcomes
+                </p>
+                    <a class="callme" href="https://www.linkedin.com/in/nikhil-kumar-76bb88179/">Let's Connect</a>
+                <!-- <button class="bbtn">Let's Connect</button> -->
+            </div>
+            <img src="DSC08607.jpg" alt="">
+        </div>
+    </section>
+
+
+    <!-- Service  section starts here -->
+    <div class="services" id="SERVICES">
+        <div class="title">
+            <h2>MY SKILLS</h2>
+        </div>
+        <div class="box">
+            <div class="card">
+                <i class="fa-solid fa-paintbrush"></i>
+            </div>
+            <h4>WEB DEVELOPMENT</h4>
+            <div class="para">
+                <p>
+                    Hi, I have completed HTML , CSS , JS course certification from COURSERA and made a lot of projects by using these technologies and I made This PORTFOLIO website by using these technologies and i got to learn a lot about it.
+                </p>
+
+                <!-- <p style="text-align:center"><a href="#">read more</a></p> -->
+            </div>
+        </div>
+
+
+
+        <div class="box">
+            <div class="card">
+                <i class="fa-solid fa-code"></i>
+            </div>
+            <h4>PYTHON / C++</h4>
+            <div class="para">
+                <p>
+                    I Have completed C++ from NEXTWING Technologies. And PYTHON Training from COURSERA and I got learn a lot about these. And I made some exciting projects like * Employee & BANK Management system using both Languages.
+                </p>
+
+                <!-- <p style="text-align:center"><a href="#">read more</a></p> -->
+            </div>
+        </div>
+
+
+
+
+        <div class="box">
+            <div class="card">
+                <i class="fa-solid fa-database"></i>
+            </div>
+            <h4>DATABASE</h4>
+            <div class="para">
+                <p>
+                    About my DATABASE Skills Then I have a Good Command On MYSQL database. In my Project of Employee Management System I used MYSQL database in backend To store Details of Employees..
+                </p>
+
+                <!-- <p style="text-align:center"><a href="#">read more</a></p> -->
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <!-- Contact me -->
+    <div class="contact" id="contact">
+        <div class="maxwidth">
+            <h2 class="title">CONTACT ME</h2>
+            <div class="leftcolumn">
+                <div class="text"><span>Get In Touch</span> </div>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro dolores deleniti aperiam facilis
+                    quibusdam, nobis consequuntur in? Et, omnis quo.</p>
+                <div class="icons">
+                    <div class="rows">
+                        <i class="fas fa-user"></i>
+                        <div class="info">
+                            <div class="head">NAME</div>
+                            <div class="subtitle">NIKHIL KUMAR</div>
+                        </div>
+                    </div>
+                    <div class="rows">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="info">
+                            <div class="head">ADDRESS</div>
+                            <div class="subtitle">Shree Sai Associates, Sai Lok Chhapraula (G.B NAGAR) Pin-code [201009]</div>
+                        </div>
+                    </div>
+                    <div class="rows">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info">
+                            <div class="head">EMAIL</div>
+                            <div class="subtitle">nikhilkumar783871@gmail.com</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HERE WE WILL MAKE RIGHT SIDE OF OUR FORM -->
+            <div class="rightcolumn">
+
+                <form action="#" method="post" name="google-sheet">
+                    <div class="text"><span>Message Me</span> </div>
+                    <div class="name">
+                        Name : <input type="text" placeholder="Name" required name="name" >
+                    </div>
+                    <div class="email">
+                        E-mail : <input type="email" placeholder="abc@xyz.com" required name="email">
+                    </div>
+                    MESSAGE :
+                    <div class="describe">
+                        <textarea cols="30" rows="10" placeholder="Describr here.." required name="message"></textarea>
+                    </div>
+
+                    <div class="button">
+                        <button type="SUBMIT" name="submit">Send Message</button>
+                    </div>
+
+
+                </form>
+            </div>
+
+            <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycby1--PdsP3yk-ypvgqqpVgZz0iUc8PrSe0CRalLpn32Xgow7iVKTwcjk28GgoiNVXI/exec'
+                const form = document.forms['google-sheet']
+              
+                form.addEventListener('submit', e => {
+                  e.preventDefault()
+                  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+                    .catch(error => console.error('Error!', error.message))
+                })
+              </script>
+
+        </div>
+    </div>
+
+    <div class="topright">
+        <div class="linkedin">
+            <a href="https://www.linkedin.com/in/nikhil-kumar-76bb88179/"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="github">
+            <a href="https://github.com/Niiikhil"><i class="fa-brands fa-github"></i></a>
+        </div>
+
+        <div class="instagram">
+            <a href="https://www.instagram.com/its_nikhil_singh_rajput/"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+
+    </div>
+
+    <!-- FOOTER STARTS HERE   -->
+
+    <footer>
+        <p>
+            Created by <span> <a href="https://www.linkedin.com/in/nikhil-kumar-76bb88179/"> @Nikhil_Kumar</a></span>| <span class="far fa-copyright"></span> 2022 All rights reserved
+        </p>
+    </footer>
+
+</body>
+
+</html>
